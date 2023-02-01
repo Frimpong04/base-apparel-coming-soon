@@ -1,0 +1,96 @@
+/* GLOBAL STYLES */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Josefin Sans', sans-serif;
+    --desaturated-red:hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red:  hsl(0, 6%, 24%);
+    --btn-bg: rgb(247, 168, 168);
+    --input-border-color:rgb(240, 115, 136);
+}
+
+/* MAIN SECTION STYLES */
+main {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    /* border:1px solid blue; */
+
+}
+
+main img {
+    max-width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    flex:1 1 20rem;
+}
+
+.text-div {
+    flex:1 1 25rem;
+    padding: 8rem 16rem;
+    justify-content: center;
+}
+
+.logo-div {
+    margin-bottom:6rem;
+}
+
+h1 {
+    font-size: 8rem;
+    letter-spacing: 1.2rem;
+    margin-bottom:2rem;
+    color: var(--dark-grayish-red);
+}
+h1 span {
+    color: var(--desaturated-red);
+    font-weight: 300;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height:1.6;
+    margin-bottom: 3rem;
+    color: var(--desaturated-red);
+    font-weight: 300;
+}
+
+/* FORM STYLES */
+form {
+    /* border:1px solid red; */
+    position: relative;
+}
+
+input {
+    width: 100%;
+    border-radius: 3rem;
+    padding:1rem;
+    font-size:1.6rem;
+    font-weight: 300;
+    border: 2px solid var(--desaturated-red);
+    color: var(--desaturated-red);
+}
+
+::placeholder {
+    color: var(--desaturated-red);
+    opacity: 1;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    width: 7rem;
+    background:linear-gradient(135deg, var(--desaturated-red), var(--soft-red)) ;
+    border: none;
+    position: absolute;
+    right:0px;px
+    z-index:6;
+    box-shadow:2px 6px 18px var(--desaturated-red);
+}
