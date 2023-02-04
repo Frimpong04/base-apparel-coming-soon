@@ -37,6 +37,11 @@ main img {
     flex:1 1 25rem;
     padding: 8rem 16rem;
     justify-content: center;
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-position: center; */
+
 }
 
 .logo-div {
@@ -78,6 +83,10 @@ input {
     color: var(--desaturated-red);
 }
 
+input:focus {
+    outline:1px solid var(--soft-red)
+}
+
 ::placeholder {
     color: var(--desaturated-red);
     opacity: 1;
@@ -90,7 +99,20 @@ input {
     background:linear-gradient(135deg, var(--desaturated-red), var(--soft-red)) ;
     border: none;
     position: absolute;
-    right:0px;px
-    z-index:6;
+    right:0px;
+    z-index: 6;
     box-shadow:2px 6px 18px var(--desaturated-red);
+}
+
+.error-icon {
+    display: none;
+    position: absolute;
+    width:2.5rem;
+    height: 2.5rem;
+    top: 0.8rem;
+    right: 18%;
+}
+.error-paragraph {
+    display: none;
+    margin-top:0.5rem;
 }
