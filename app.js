@@ -20,6 +20,12 @@ function validateEmail(e) {
 
 }
 
+function removeErrorMessage() {
+    console.log("error cleared");
+    errorParagraph.style.display = "none";
+    errorIcon.style.display = "none";
+}
 
 //EVENT LISTENERS
 submitBtn.addEventListener("click", validateEmail);
+inputEmail.addEventListener("focus", removeErrorMessage);

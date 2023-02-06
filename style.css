@@ -17,35 +17,56 @@ html {
 
 /* MAIN SECTION STYLES */
 main {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-    min-height: 100vh;
-    width: 100vw;
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+
+    gap:1rem;
+    grid-auto-flow:row;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas: "logo"
+                        " hero"
+                        "text";
+    height: 100vh;
+    /* width: 100%; */
+    
     /* border:1px solid blue; */
 
 }
 
-main img {
-    max-width: 100%;
-    height: 100%;
-    /* object-fit: cover; */
-    flex:1 1 20rem;
+.main-image {
+    width: 100%;
+    /* border:1px solid red; */
+    /* height: 100%;
+    object-fit: cover; 
+    flex:1 1 20rem; */
+    grid-area: hero;
 }
 
-.text-div {
-    flex:1 1 25rem;
-    padding: 8rem 16rem;
-    justify-content: center;
-    background-image: url("images/bg-pattern-desktop.svg");
-    background-repeat: no-repeat;
+.main-image img {
+    max-width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.content-div {
+    grid-area: text;
+    /* margin:4rem; */
+    padding: 4rem;
+    border:1px solid red;
+    /* flex:1 1 25rem; */
+    /* padding: 8rem 16rem;
+    justify-content: center; */
+    /* background-image: url("images/bg-pattern-desktop.svg"); */
+    /* background-repeat: no-repeat; */
     /* background-size: cover; */
     /* background-position: center; */
 
 }
 
 .logo-div {
-    margin-bottom:6rem;
+    margin:1rem 4rem;
+    grid-area: logo;
+    /* border:1px solid red; */
+    padding:1rem;
 }
 
 h1 {
@@ -115,4 +136,33 @@ input:focus {
 .error-paragraph {
     display: none;
     margin-top:0.5rem;
+}
+
+@media only screen and (min-width:1440px) {
+    main {
+        grid-template-columns:repeat(2, 1fr);
+        gap:0rem;
+        grid-template-areas: "logo hero"
+        "content hero"
+        "content hero";
+    }
+
+    .logo-div {
+        grid-area: logo;
+        margin:4rem 16rem 0rem;
+    }
+
+    .main-image {
+        grid-area: hero;
+        border:1px solid blue;
+    }
+
+    .main-image img {
+        width:100%;
+        height:100%;
+    }
+    .content-div {
+        grid-area: content;
+        margin:8rem 16rem;
+    }
 }
