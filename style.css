@@ -121,6 +121,7 @@ input:focus {
     border: none;
     position: absolute;
     right:0px;
+    top: 0px;
     z-index: 6;
     box-shadow:2px 6px 18px var(--desaturated-red);
 }
@@ -163,6 +164,6 @@ input:focus {
     }
     .content-div {
         grid-area: content;
-        margin:8rem 16rem;
+        padding:8rem 16rem;
     }
 }
