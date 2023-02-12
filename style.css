@@ -53,6 +53,8 @@ main {
     padding:1.5rem 3rem;
     /* background-image: url("images/"); */
     /* border:1px solid red; */
+    width: 85%;
+    place-self: center;
 
 }
 
@@ -64,10 +66,11 @@ main {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     letter-spacing: 1.2rem;
     margin-bottom:1rem;
     color: var(--dark-grayish-red);
+    text-align: center;
 }
 h1 span {
     color: var(--desaturated-red);
@@ -75,11 +78,12 @@ h1 span {
 }
 
 p {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     line-height:1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: var(--desaturated-red);
     font-weight: 300;
+    text-align: center;
 }
 
 /* FORM STYLES */
@@ -126,7 +130,7 @@ input:focus {
     width:2.5rem;
     height: 2.5rem;
     top: 0.8rem;
-    right: 18%;
+    right: 20%;
 }
 .error-paragraph {
     display: none;
@@ -163,15 +167,18 @@ input:focus {
     .content-div {
         grid-area: content;
         padding:8rem 16rem;
+        width: 100%;
     }
 
     h1 {
         font-size:8rem;
+        text-align:left;
     }
 
     p {
         font-size: 1.6rem;
         line-height: 1.6;
         margin-bottom: 3rem;
+        text-align: left;
     }
 }
