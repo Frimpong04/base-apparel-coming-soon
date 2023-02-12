@@ -51,6 +51,7 @@ main {
     grid-area: text;
     /* margin:4rem; */
     padding: 3rem;
+    /* background-image: url("images/"); */
     /* border:1px solid red; */
 
 }
@@ -139,7 +140,10 @@ input:focus {
         grid-template-areas: "logo hero"
         "content hero"
         "content hero";
-
+        background-image: url("images/bg-pattern-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: contain;
     }
 
     .logo-div {
