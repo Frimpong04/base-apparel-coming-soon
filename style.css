@@ -50,7 +50,7 @@ main {
 .content-div {
     grid-area: text;
     /* margin:4rem; */
-    padding: 3rem;
+    padding:1.5rem 3rem;
     /* background-image: url("images/"); */
     /* border:1px solid red; */
 
@@ -64,9 +64,9 @@ main {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: 1.2rem;
-    margin-bottom:2rem;
+    margin-bottom:1rem;
     color: var(--dark-grayish-red);
 }
 h1 span {
@@ -76,7 +76,7 @@ h1 span {
 
 p {
     font-size: 1.3rem;
-    line-height:1.4;
+    line-height:1.2;
     margin-bottom: 1rem;
     color: var(--desaturated-red);
     font-weight: 300;
